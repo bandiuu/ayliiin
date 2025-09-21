@@ -1,13 +1,13 @@
-// 🌻 Girasoles flotantes (1 y 2 son flores, 3 son pétalos)
-const girasoles = ['girasol1.png', 'girasol2.png', 'girasol3.png'];
+// 🌻 Girasoles flotantes (solo girasol1 y girasol2)
+const girasoles = ['girasol1.png', 'girasol2.png'];
 const contenedorFlores = document.getElementById('flores');
 
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < 15; i++) {
   const flor = document.createElement('img');
   flor.src = girasoles[Math.floor(Math.random() * girasoles.length)];
   flor.className = 'flor';
 
-  const tamaño = Math.random() * 70 + 60; 
+  const tamaño = Math.random() * 70 + 50;
   flor.style.width = `${tamaño}px`;
   flor.style.left = `${Math.random() * 100}%`;
   flor.style.animationDuration = `${10 + Math.random() * 5}s`;
@@ -56,10 +56,10 @@ const boton = document.getElementById("boton-musica");
 boton.onclick = () => {
   if (audio.paused) {
     audio.play();
-    boton.textContent = '⏸️ Pausar música';
+    boton.textContent = '⏸️ Pausar';
   } else {
     audio.pause();
-    boton.textContent = '🎵 Reproducir música';
+    boton.textContent = '🎵 Música';
   }
 };
 
@@ -67,4 +67,3 @@ boton.onclick = () => {
 document.getElementById("download-pdf").onclick = () => {
   window.location.href = "carta.pdf";
 };
-
