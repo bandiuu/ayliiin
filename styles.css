@@ -24,7 +24,7 @@ html, body {
 .header h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #e6b800;
+  color: #000;
   animation: fadeIn 2s ease-in;
 }
 
@@ -144,3 +144,4 @@ html, body {
     padding: 5px 10px;
   }
 }
+
