@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>🌻 Para Ayliiin 🌻</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">🌻 Feliz Día de la Flor Amarilla 🌻</h1>
-    <p class="dedicatoria">
-      Ayliiin 💛, eres alguien demasiado especial para mí.  
-      Me encanta pasar tiempo contigo, cada momento se vuelve único 🌻✨.  
-      Gracias por estar en mi vida, siempre voy a valorarte muchísimo.  
-      Hoy quiero regalarte girasoles en este pequeño espacio,  
-      porque así como ellos iluminan el día, tú iluminas el mío. 💛
-    </p>
+  <div class="flower-container" id="flores"></div>
 
-    <div class="imagenes">
-      <img src="girasol1.png" alt="Girasol 1" class="flor">
-      <img src="girasol2.png" alt="Girasol 2" class="flor">
-      <img src="girasol3.png" alt="Girasol 3" class="flor">
+  <main class="contenido">
+    <header class="header">
+      <h1>🌻 Un detalle especial solo para ti 🌻</h1>
+    </header>
+
+    <section class="maquina-container">
+      <p id="texto-maquina"></p>
+    </section>
+
+    <div class="controls">
+      <button id="boton-musica">🎵 Reproducir música</button>
+      <button id="download-pdf">💛 Una carta para ti</button>
+      <audio id="musica" src="musica.mp3" autoplay loop></audio>
     </div>
-
-    <button id="btnSorprise">🌸 Toca aquí 🌸</button>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
