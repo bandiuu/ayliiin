@@ -23,12 +23,12 @@ const texto = [
   "",
   "Quiero decirte algo muy especial...",
   "Me gusta mucho pasar tiempo contigo,",
-  "porque cada momento a tu lado se siente único. ✨",
+  "porque cada momento a tu lado es especial. ✨",
   "",
   "Hoy quiero regalarte girasoles,",
   "aunque no sean reales, espero te guste 🌻💛",
   "",
-  "Gracias por estar en mi vida 💫"
+  "Me alegra haberte conocido 💫"
 ];
 const destino = document.getElementById("texto-maquina");
 let linea = 0, caracter = 0;
@@ -67,3 +67,4 @@ boton.onclick = () => {
 document.getElementById("download-pdf").onclick = () => {
   window.location.href = "carta.pdf";
 };
+
